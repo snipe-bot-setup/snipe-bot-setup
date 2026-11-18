@@ -1,32 +1,189 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Snipe's Bot Setup • Discord Setup Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snipe's Bot Setup</title>
 <style>
-:root{color-scheme:dark;--bg:#10131c;--panel:#191f2d;--panel2:#242d40;--text:#eef2ff;--muted:#aab4cc;--accent:#8b7cff;--line:#303a50}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0,#29234d 0,transparent 36%),var(--bg);color:var(--text);font:15px/1.5 system-ui,Segoe UI,sans-serif}
-main{max-width:900px;margin:auto;padding:42px 20px 60px}.top{display:flex;align-items:center;gap:14px;margin-bottom:25px}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#8b7cff,#4ac5d9);display:grid;place-items:center;font-size:25px;font-weight:800;color:#10131c}
-h1{font-size:clamp(26px,5vw,38px);line-height:1.1;margin:0}.sub,.muted{color:var(--muted)}.sub{margin:6px 0 0}
-.notice{background:#292641;border:1px solid #514b80;border-radius:14px;padding:14px 16px;margin:22px 0;color:#e4e0ff}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:19px;display:flex;flex-direction:column;min-height:210px}
-h2{font-size:19px;margin:0 0 6px}.tag{font-size:12px;color:#c7c0ff;background:#302b50;padding:4px 8px;border-radius:99px;align-self:flex-start;margin-bottom:12px}.desc{color:var(--muted);margin:0 0 16px;flex:1}
-a.btn{border-radius:10px;padding:12px 14px;background:var(--accent);color:white;font-weight:700;text-decoration:none;text-align:center;display:block}a.btn:hover{filter:brightness(1.1)}a.disabled{background:var(--panel2);border:1px solid var(--line);color:var(--muted);pointer-events:none}
-footer{color:var(--muted);font-size:13px;margin-top:24px;border-top:1px solid var(--line);padding-top:18px}
+*{box-sizing:border-box}
+body{
+ margin:0;background:#0b0e17;color:#f1f3ff;
+ font-family:Arial,sans-serif;
+}
+header{
+ text-align:center;padding:55px 20px;
+ background:linear-gradient(135deg,#171d3b,#25204a);
+ border-bottom:1px solid #34395c;
+}
+header h1{font-size:38px;margin:0}
+header p{color:#b8bfdc}
+.container{max-width:1100px;margin:auto;padding:25px}
+h2{margin-top:35px}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+ gap:18px;
+}
+.card{
+ background:#151a2b;border:1px solid #303954;
+ border-radius:15px;padding:20px;
+}
+.card h3{margin:0 0 8px;color:#aebaff}
+.card p{color:#b8bfd0;line-height:1.5}
+.btn{
+ display:inline-block;background:#7587ff;color:white;
+ padding:11px 16px;border-radius:8px;
+ text-decoration:none;font-weight:bold;margin-top:8px;
+}
+.btn:hover{background:#596bdc}
+.tag{font-size:12px;color:#8ee5bd;font-weight:bold}
+.guide{
+ background:#151a2b;border:1px solid #303954;
+ border-radius:15px;padding:20px;line-height:1.8;
+}
+.warning{
+ background:#302719;border:1px solid #8c6831;
+ padding:15px;border-radius:10px;color:#ffe1a1;
+}
+footer{text-align:center;padding:30px;color:#8992ae}
+a{color:#aebaff}
 </style>
 </head>
 <body>
-<main>
-<header class="top"><div class="logo">M</div><div><h1>Snipe's Bot Setup</h1><p class="sub">Discord Setup Hub · One-click bot invites</p></div></header>
-<div class="notice"><strong>Choose a bot and click Add.</strong> Each button opens that bot's official invite/authorization page. Select your Snipe's Bot Setup server in Discord, review the permissions, then authorize.</div>
-<section class="grid">
-<article class="card"><span class="tag">Moderation & roles</span><h2>Carl-bot</h2><p class="desc">Reaction roles, moderation, logging, AutoMod and custom commands.</p><a class="btn" href="https://discord.com/oauth2/authorize?client_id=235148962103951360&amp;scope=bot&amp;permissions=470150352" target="_blank" rel="noopener noreferrer">Add Carl-bot</a></article>
-<article class="card"><span class="tag">Support tickets</span><h2>Ticket Tool</h2><p class="desc">Private support tickets and ticket panels.</p><a class="btn" href="https://ticket-tool.app/invite?src=mirror-smp-setup-hub" target="_blank" rel="noopener noreferrer">Add Ticket Tool</a></article>
-<article class="card"><span class="tag">Invite tracking</span><h2>Invite Tracker</h2><p class="desc">Track invites, welcome new members and view invite activity.</p><a class="btn" href="https://invite-tracker.com/invite?utm_source=mirror-smp-setup-hub" target="_blank" rel="noopener noreferrer">Add Invite Tracker</a></article>
-<article class="card"><span class="tag">To be decided</span><h2>Security bot</h2><p class="desc">We'll add its official invite button after you choose the security bot.</p><a class="btn disabled" aria-disabled="true">Coming later</a></article>
-</section>
-<footer><strong>Permission note:</strong> The page makes inviting quick, but it cannot bypass Discord. You still need the server permission Discord requires to add bots (usually Manage Server or Administrator). Always review each bot's requested permissions before approving.</footer>
-</main>
+
+<header>
+ <h1>Snipe's Bot Setup</h1>
+ <p>Your Discord server's bot installation hub</p>
+ <p>Choose a bot • Review permissions • Authorize safely</p>
+</header>
+
+<div class="container">
+
+<h2>🛡️ Security & Moderation</h2>
+<div class="grid">
+
+<div class="card">
+ <span class="tag">MODERATION</span>
+ <h3>Carl-bot</h3>
+ <p>Reaction roles, automod, logging, welcome messages and custom commands.</p>
+ <p><b>Permissions:</b> View Channels, Send Messages, Embed Links, Read Message History. Manage Roles for reaction roles. Manage Messages for automod.</p>
+ <a class="btn" href="https://carl.gg/" target="_blank">Add Carl-bot ↗</a>
+</div>
+
+<div class="card">
+ <span class="tag">ANTI-RAID SECURITY</span>
+ <h3>Wick</h3>
+ <p>Anti-raid protection, verification, suspicious member detection and security monitoring.</p>
+ <p><b>Permissions:</b> View Channels, Send Messages, Manage Messages, Manage Roles, Kick Members, Ban Members and Moderate Members as required by enabled features.</p>
+ <a class="btn" href="https://wick.bot/" target="_blank">Add Wick ↗</a>
+</div>
+
+</div>
+
+<h2>🎫 Server Management</h2>
+<div class="grid">
+
+<div class="card">
+ <span class="tag">SUPPORT SYSTEM</span>
+ <h3>Ticket Tool</h3>
+ <p>Private support tickets, staff assistance and ticket transcripts.</p>
+ <p><b>Permissions:</b> View Channels, Send Messages, Embed Links, Read Message History, Manage Channels. Attach Files for transcripts.</p>
+ <a class="btn" href="https://ticket-tool.app/" target="_blank">Add Ticket Tool ↗</a>
+</div>
+
+<div class="card">
+ <span class="tag">INVITE TRACKING</span>
+ <h3>Invite Tracker</h3>
+ <p>Track server invites, member joins, invite counts and invite leaderboards.</p>
+ <p><b>Permissions:</b> Manage Server for invite access, View Channels, Send Messages, Embed Links and Read Message History.</p>
+ <a class="btn" href="https://invite-tracker.com/" target="_blank">Add Invite Tracker ↗</a>
+</div>
+
+<div class="card">
+ <span class="tag">BACKUPS</span>
+ <h3>Xenon</h3>
+ <p>Server backups, templates and restoration of server structure.</p>
+ <p><b>Permissions:</b> Manage Server, Manage Channels and Manage Roles for applicable backup and restoration features.</p>
+ <a class="btn" href="https://xenon.bot/" target="_blank">Add Xenon ↗</a>
+</div>
+
+</div>
+
+<h2>🎉 Community & Engagement</h2>
+<div class="grid">
+
+<div class="card">
+ <span class="tag">LEVELING</span>
+ <h3>Arcane</h3>
+ <p>XP, leveling, leaderboards and activity rewards.</p>
+ <p><b>Permissions:</b> View Channels, Send Messages, Embed Links, Read Message History. Manage Roles for level rewards.</p>
+ <a class="btn" href="https://arcane.bot/" target="_blank">Add Arcane ↗</a>
+</div>
+
+<div class="card">
+ <span class="tag">GIVEAWAYS</span>
+ <h3>GiveawayBot</h3>
+ <p>Host giveaways, collect entries and select winners.</p>
+ <p><b>Permissions:</b> View Channels, Send Messages, Embed Links, Read Message History and Add Reactions.</p>
+ <a class="btn" href="https://giveawaybot.party/" target="_blank">Add GiveawayBot ↗</a>
+</div>
+
+<div class="card">
+ <span class="tag">EVENTS</span>
+ <h3>Sesh</h3>
+ <p>Schedule events, manage RSVPs and send event reminders.</p>
+ <p><b>Permissions:</b> View Channels, Send Messages, Embed Links, Read Message History and Use Application Commands. Manage Events if using Discord Scheduled Events.</p>
+ <a class="btn" href="https://sesh.fyi/" target="_blank">Add Sesh ↗</a>
+</div>
+
+</div>
+
+<h2>🔐 Important Permission Guide</h2>
+<div class="guide">
+<p><b>Administrator:</b> Gives almost complete server control. Avoid granting it unless genuinely necessary.</p>
+<p><b>Manage Roles:</b> Allows a bot to create, edit and assign roles below its highest role.</p>
+<p><b>Manage Channels:</b> Allows creating, editing and deleting channels.</p>
+<p><b>Manage Server:</b> Allows access to important server settings.</p>
+<p><b>Manage Messages:</b> Allows deleting other members' messages.</p>
+<p><b>Kick Members:</b> Allows removing members from the server.</p>
+<p><b>Ban Members:</b> Allows banning members from the server.</p>
+<p><b>Moderate Members:</b> Allows timing out members.</p>
+<p><b>Mention Everyone:</b> Allows @everyone and @here announcements.</p>
+<p><b>View Channels:</b> Allows the bot to see permitted channels.</p>
+<p><b>Send Messages:</b> Allows the bot to respond.</p>
+<p><b>Embed Links:</b> Allows rich embeds in messages.</p>
+</div>
+
+<h2>⚠️ Security Rules</h2>
+<div class="warning">
+<ul>
+<li>Never give Administrator automatically.</li>
+<li>Only authorize bots from their official websites.</li>
+<li>Check the server name before authorizing.</li>
+<li>Give each bot only the permissions its features need.</li>
+<li>Keep bot roles above the roles they need to manage, but below owner-level roles.</li>
+<li>Test bots in a restricted channel first.</li>
+<li>Review permissions periodically.</li>
+</ul>
+</div>
+
+<h2>📌 Before Adding a Bot</h2>
+<div class="guide">
+<p>1. Click the bot's official invitation button.</p>
+<p>2. Select your Discord server.</p>
+<p>3. Review the requested permissions.</p>
+<p>4. Remove unnecessary permissions where possible.</p>
+<p>5. Authorize and configure the bot.</p>
+<p>6. Test that its features work correctly.</p>
+</div>
+
+</div>
+
+<footer>
+ <p>Snipe's Bot Setup © 2026</p>
+ <p>Unofficial community tool. Not affiliated with Discord or the listed bot developers.</p>
+</footer>
+
 </body>
 </html>
